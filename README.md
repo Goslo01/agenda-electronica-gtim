@@ -2,7 +2,7 @@
 Aplicacion Android para gestion de tareas con borrado logico y exportacion de datos
 
 
- Agenda Electrónica GTIM
+### Agenda Electrónica GTIM
 Una aplicación Android completa para la gestión profesional de tareas con sistema de borrado lógico, exportación de datos y almacenamiento local usando SQLite 
 
  📋 Descripción
