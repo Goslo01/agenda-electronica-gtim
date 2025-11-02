@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#F5F5F5"
+    android:gravity="center">
+
+    <!-- título-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Agenda Electrónica GTIM"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="#1976D2"
+        android:layout_marginBottom="40dp" />
+
+    <!-- Subtítulo -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Iniciar Sesión"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#212121"
+        android:textAlignment="center"
+        android:layout_marginBottom="30dp" />
+
+    <!-- Campo de usuario -->
+    <EditText
+        android:id="@+id/editUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="Nombre de usuario"
+        android:inputType="text"
+        android:autofillHints="username"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="#FFFFFF"
+        android:textColor="#212121"
+        android:textColorHint="#757575"
+        android:drawablePadding="12dp" />
+
+    <!-- Campo de contraseña -->
+    <EditText
+        android:id="@+id/editContrasena"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:autofillHints="password"
+        android:padding="16dp"
+        android:layout_marginBottom="24dp"
+        android:background="#FFFFFF"
+        android:textColor="#212121"
+        android:textColorHint="#757575"
+        android:drawablePadding="12dp" />
+
+    <!-- Botón de login -->
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Iniciar Sesión"
+        android:background="#1976D2"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Botón para registrarse -->
+    <Button
+        android:id="@+id/btnRegistro"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="¿No tienes cuenta? Regístrate"
+        android:background="#4CAF50"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp" />
+
+    <!-- Mensaje con pista de contraseña -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Usuario de prueba: admin / 1234"
+        android:textSize="12sp"
+        android:textColor="#757575"
+        android:textAlignment="center"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

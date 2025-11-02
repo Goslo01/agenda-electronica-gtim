@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ScrollView para poder hacer scroll cuando hay muchos campos -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Título de la app -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Agenda Electrónica GTIM"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="#1976D2"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Subtítulo -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Crear Nueva Tarea"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#212121"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Campo de título -->
+        <EditText
+            android:id="@+id/editTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Título de la tarea"
+            android:inputType="textCapSentences"
+            android:autofillHints="username"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp"
+            android:background="#FFFFFF"
+            android:textColor="#212121"
+            android:textColorHint="#757575" />
+
+        <!-- Sección de INICIO -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fecha y Hora de Inicio"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#1976D2"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Campo de fecha de inicio -->
+        <EditText
+            android:id="@+id/editFechaInicio"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Fecha de inicio (dd/mm/aaaa)"
+            android:inputType="date"
+            android:autofillHints="birthdate"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp"
+            android:background="#FFFFFF"
+            android:textColor="#212121"
+            android:textColorHint="#757575" />
+
+        <!-- Campo de hora de inicio -->
+        <EditText
+            android:id="@+id/editHoraInicio"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Hora de inicio (hh:mm)"
+            android:inputType="time"
+            android:autofillHints="username"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp"
+            android:background="#FFFFFF"
+            android:textColor="#212121"
+            android:textColorHint="#757575" />
+
+        <!-- Sección de FIN -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fecha y Hora de Finalización"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#1976D2"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Campo de fecha de fin -->
+        <EditText
+            android:id="@+id/editFechaFin"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Fecha de fin (dd/mm/aaaa)"
+            android:inputType="date"
+            android:autofillHints="birthdate"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp"
+            android:background="#FFFFFF"
+            android:textColor="#212121"
+            android:textColorHint="#757575" />
+
+        <!-- Campo de hora de fin -->
+        <EditText
+            android:id="@+id/editHoraFin"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Hora de fin (hh:mm)"
+            android:inputType="time"
+            android:autofillHints="username"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp"
+            android:background="#FFFFFF"
+            android:textColor="#212121"
+            android:textColorHint="#757575" />
+
+        <!-- Campo de responsable -->
+        <EditText
+            android:id="@+id/editResponsable"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Responsable de la tarea"
+            android:inputType="textPersonName"
+            android:autofillHints="name"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp"
+            android:background="#FFFFFF"
+            android:textColor="#212121"
+            android:textColorHint="#757575" />
+
+        <!-- Campo de descripción -->
+        <EditText
+            android:id="@+id/editDescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="96dp"
+            android:hint="Descripción (opcional)"
+            android:inputType="textMultiLine|textCapSentences"
+            android:autofillHints="username"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+            android:background="#FFFFFF"
+            android:textColor="#212121"
+            android:textColorHint="#757575"
+            android:gravity="top|start" />
+
+        <!-- Botón para crear tarea -->
+        <Button
+            android:id="@+id/btnCrearTarea"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Crear Tarea"
+            android:background="#1976D2"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp" />
+
+        <!-- *** NUEVO: Botón para ir a la papelera *** -->
+        <Button
+            android:id="@+id/btnPapelera"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Ver Papelera"
+            android:background="#FF9800"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp" />
+
+        <!-- *** NUEVO: Botón para exportar tareas *** -->
+        <Button
+            android:id="@+id/btnExportar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Exportar Tareas"
+            android:background="#4CAF50"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp" />
+
+        <!-- *** NUEVO: Botón para ver historial de exportaciones *** -->
+        <Button
+            android:id="@+id/btnHistorial"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Ver Historial de Exportaciones"
+            android:background="#9C27B0"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Título de la lista -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lista de Tareas"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#212121"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Lista de tareas -->
+        <ListView
+            android:id="@+id/listViewTareas"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:divider="#E0E0E0"
+            android:dividerHeight="1dp"
+            android:background="#FFFFFF" />
+
+    </LinearLayout>
+</ScrollView>

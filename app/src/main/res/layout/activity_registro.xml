@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center">
+
+        <!-- Título -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Agenda Electrónica GTIM"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="#1976D2"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Subtítulo -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Crear Cuenta Nueva"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#212121"
+            android:textAlignment="center"
+            android:layout_marginBottom="30dp" />
+
+        <!-- Sección DATOS PERSONALES -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Datos Personales"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#1976D2"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Campo Nombre -->
+        <EditText
+            android:id="@+id/editNombre"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Nombre"
+            android:inputType="textPersonName"
+            android:autofillHints="name"
+            android:padding="16dp"
+            android:layout_marginBottom="12dp"
+            android:background="#FFFFFF"
+            android:textColor="#212121"
+            android:textColorHint="#757575" />
+
+        <!-- Campo Apellido -->
+        <EditText
+            android:id="@+id/editApellido"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Apellido"
+            android:inputType="textPersonName"
+            android:autofillHints="name"
+            android:padding="16dp"
+            android:layout_marginBottom="12dp"
+            android:background="#FFFFFF"
+            android:textColor="#212121"
+            android:textColorHint="#757575" />
+
+        <!-- Spinner de genero-->
+        <Spinner
+            android:id="@+id/spinnerSexo"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="#FFFFFF"
+            android:padding="16dp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Datos usuario -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Datos de Usuario"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#1976D2"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Campo Email -->
+        <EditText
+            android:id="@+id/editEmail"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Correo Electrónico"
+            android:inputType="textEmailAddress"
+            android:autofillHints="emailAddress"
+            android:padding="16dp"
+            android:layout_marginBottom="12dp"
+            android:background="#FFFFFF"
+            android:textColor="#212121"
+            android:textColorHint="#757575" />
+
+        <!-- Campo Usuario -->
+        <EditText
+            android:id="@+id/editUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Nombre de Usuario"
+            android:inputType="text"
+            android:autofillHints="username"
+            android:padding="16dp"
+            android:layout_marginBottom="12dp"
+            android:background="#FFFFFF"
+            android:textColor="#212121"
+            android:textColorHint="#757575" />
+
+        <!-- Campo Contraseña -->
+        <EditText
+            android:id="@+id/editContrasena"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:autofillHints="password"
+            android:padding="16dp"
+            android:layout_marginBottom="12dp"
+            android:background="#FFFFFF"
+            android:textColor="#212121"
+            android:textColorHint="#757575" />
+
+        <!-- Campo Confirmar Contraseña -->
+        <EditText
+            android:id="@+id/editConfirmarContrasena"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Confirmar Contraseña"
+            android:inputType="textPassword"
+            android:autofillHints="password"
+            android:padding="16dp"
+            android:layout_marginBottom="24dp"
+            android:background="#FFFFFF"
+            android:textColor="#212121"
+            android:textColorHint="#757575" />
+
+        <!-- Botón Registrarse -->
+        <Button
+            android:id="@+id/btnRegistrarse"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Registrarse"
+            android:background="#4CAF50"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Botón Ya tengo cuenta -->
+        <Button
+            android:id="@+id/btnYaTengoCuenta"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Ya tengo cuenta - Iniciar Sesión"
+            android:background="#9E9E9E"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+</ScrollView>

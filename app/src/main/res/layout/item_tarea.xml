@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="#FFFFFF">
+
+    <!-- TextView para mostrar la información de la tarea -->
+    <TextView
+        android:id="@+id/txtTarea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#212121"
+        android:textSize="14sp"
+        android:paddingEnd="8dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="8dp" />
+
+    <!-- Contenedor horizontal para los botones -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <!-- Botón de exportar individual -->
+        <Button
+            android:id="@+id/btnExportarIndividual"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="Exportar"
+            android:background="#2196F3"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:layout_marginEnd="4dp"
+            android:textStyle="bold" />
+
+        <!-- ImageButton de eliminar con icono de basura -->
+        <ImageButton
+            android:id="@+id/btnEliminar"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@android:drawable/ic_menu_delete"
+            android:background="#673AB7"
+            android:scaleType="fitCenter"
+            android:padding="8dp"
+            android:layout_marginStart="4dp"
+            android:contentDescription="Eliminar tarea" />
+
+    </LinearLayout>
+
+</LinearLayout>
