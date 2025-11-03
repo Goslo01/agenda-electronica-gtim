@@ -137,7 +137,7 @@ app/
 
 1. Clona el repositorio:
 ```bash
-git clone https://github.com/TuUsuario/agenda-electronica-gtim.git
+git clone https://github.com/Goslo01/agenda-electronica-gtim.git
 ```
 
 2. Abre el proyecto en Android Studio
@@ -160,5 +160,5 @@ Este proyecto es de código abierto y está disponible bajo la Licencia MIT.
 
 ## 👨‍💻 Autor
 
-**Luis Gonzalez**
+**Luis Gzz**
 - GitHub: [Goslo01](https://github.com/Goslo01)
