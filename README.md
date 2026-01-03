@@ -1,20 +1,21 @@
-# agenda-electronica-gtim
-Aplicacion Android para gestion de tareas con borrado logico y exportacion de datos
+# Agenda Electrónica GTIM
 
+![Android](https://img.shields.io/badge/Android-8.0%2B-green)
+![Java](https://img.shields.io/badge/Java-17-orange)
+![SQLite](https://img.shields.io/badge/SQLite-3-blue)
+![License](https://img.shields.io/badge/License-MIT-yellow)
 
-### Agenda Electrónica GTIM
-Una aplicación Android completa para la gestión profesional de tareas con sistema de borrado lógico, exportación de datos y almacenamiento local usando SQLite 
+Una aplicación Android completa para la gestión profesional de tareas con sistema de borrado lógico, exportación de datos y almacenamiento local usando SQLite
 
- 📋 Descripción
+## 📋 Descripción
 
-Agenda Electrónica GTIM es una aplicación móvil diseñada para facilitar la organización y seguimiento de tareas personales. Permite a los usuarios crear, gestionar, exportar y guardar sus actividades de manera eficiente, incluye un sistema de borrado logico que previene cualquier borrado de informacion accidental
+Agenda Electrónica GTIM es una aplicación móvil diseñada para facilitar la organización y seguimiento de tareas personales. Permite a los usuarios crear, gestionar, exportar y guardar sus actividades de manera eficiente. Incluye un sistema de borrado lógico que previene cualquier borrado de información accidental.
 
- ✨ Características Principales de la aplicacion
+## ✨ Características Principales
 
 ### 🔐 Gestión de Usuarios
 - Sistema de registro de nuevos usuarios
 - Autenticación segura con validación de credenciales
-- Validación de credenciales
 
 ### ✏️ Gestión de Tareas
 - Creación de tareas con información completa (título, fechas, horarios, descripción)
@@ -23,7 +24,7 @@ Agenda Electrónica GTIM es una aplicación móvil diseñada para facilitar la o
 - Filtrado de tareas por usuario
 
 ### 🗑️ Borrado Lógico y Papelera
-- Sistema de borrado lógico que previene borrado de datos de forma accidental
+- Sistema de borrado lógico que previene el borrado accidental de datos
 - Papelera para revisar tareas eliminadas
 - Recuperación de tareas eliminadas de forma accidental
 - Eliminación permanente de tareas
@@ -31,21 +32,20 @@ Agenda Electrónica GTIM es una aplicación móvil diseñada para facilitar la o
 ### 📤 Exportación de Datos
 - Exportación de todas las tareas
 - Exportación individual de tareas
-- Tres formatos disponibles de exportacion: **TXT**, **CSV**, **JSON**
-- Archivos guardados en la carpeta de descargas del telefono android
+- Tres formatos disponibles de exportación: TXT, CSV, JSON
+- Archivos guardados en la carpeta de descargas del teléfono Android
 
 ### 💾 Historial de Exportaciones
 - Registro completo de todas las exportaciones realizadas
 - Consulta de fecha y formato de cada exportación
 
-
 ## 🛠️ Tecnologías Utilizadas
 
-- **Lenguaje**: Java
-- **Plataforma**: Android SDK
-- **Base de Datos**: SQLite
-- **IDE**: Android Studio
-- **Mínimo API Level**: 26 (Android 8.0 Lollipop)
+- **Lenguaje:** Java
+- **Plataforma:** Android SDK
+- **Base de Datos:** SQLite
+- **IDE:** Android Studio
+- **Mínimo API Level:** 26 (Android 8.0 Oreo)
 
 ## 🗄️ Estructura de Base de Datos
 
@@ -131,34 +131,41 @@ app/
 
 ### Requisitos Previos
 - Android Studio (última versión)
-- Dispositivo Android o Emulador con API 26+
+- Dispositivo Android o Emulador con API 26+ (Android 8.0 Oreo o superior)
+- JDK 11 o superior
+
+### Permisos Necesarios
+La aplicación requiere los siguientes permisos:
+- `WRITE_EXTERNAL_STORAGE` - Para exportar archivos
+- `READ_EXTERNAL_STORAGE` - Para acceder a archivos exportados
 
 ### Pasos de Instalación
 
 1. Clona el repositorio:
 ```bash
-git clone https://github.com/Goslo01/agenda-electronica-gtim.git
+   git clone https://github.com/Goslo01/agenda-electronica-gtim.git
 ```
 
 2. Abre el proyecto en Android Studio
 
-3. Sincroniza el proyecto con Gradle
+3. Sincroniza el proyecto con Gradle:
+   - `File > Sync Project with Gradle Files`
 
 4. Conecta un dispositivo Android o inicia un emulador
 
-5. Ejecuta la aplicación
+5. Ejecuta la aplicación:
+   - Haz clic en el botón ▶️ Run
 
 ### Credenciales de Prueba
-
 La aplicación incluye un usuario de prueba:
-- **Usuario**: admin
-- **Contraseña**: 1234
+- **Usuario:** admin
+- **Contraseña:** 1234
 
 ## 📄 Licencia
-
 Este proyecto es de código abierto y está disponible bajo la Licencia MIT.
 
 ## 👨‍💻 Autor
-
 **Luis Gzz**
-- GitHub: [Goslo01](https://github.com/Goslo01)
+- GitHub: [@Goslo01](https://github.com/Goslo01)
+
+---
