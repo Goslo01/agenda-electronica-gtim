@@ -8,7 +8,6 @@
 Una aplicación Android completa para la gestión profesional de tareas con sistema de borrado lógico, exportación de datos y almacenamiento local usando SQLite
 
 ## 📋 Descripción
-
 Agenda Electrónica GTIM es una aplicación móvil diseñada para facilitar la organización y seguimiento de tareas personales. Permite a los usuarios crear, gestionar, exportar y guardar sus actividades de manera eficiente. Incluye un sistema de borrado lógico que previene cualquier borrado de información accidental.
 
 ## ✨ Características Principales
@@ -45,7 +44,7 @@ Agenda Electrónica GTIM es una aplicación móvil diseñada para facilitar la o
 - **Plataforma:** Android SDK
 - **Base de Datos:** SQLite
 - **IDE:** Android Studio
-- **Mínimo API Level:** 26 (Android 8.0 Oreo)
+- **Nivel de API Minimo:** 26 (Android 8.0 Oreo)
 
 ## 🗄️ Estructura de Base de Datos
 
@@ -107,23 +106,23 @@ app/
         ├── java/com/example/agendaelectronicagtim/
         │   ├── DatabaseHelper.java          # Gestor de base de datos SQLite
         │   ├── ExportManager.java           # Manejo de exportaciones
-        │   ├── HistorialExportacionesActivity.java
-        │   ├── LoginActivity.java           # Pantalla de login
-        │   ├── MainActivity.java            # Pantalla principal
-        │   ├── PapeleraActivity.java        # Pantalla de papelera
+        │   ├── HistorialExportacionesActivity.java  # Lógica de historial
+        │   ├── LoginActivity.java           # Lógica de login
+        │   ├── MainActivity.java            # Lógica principal
+        │   ├── PapeleraActivity.java        # Lógica de papelera
         │   ├── PapeleraAdapter.java         # Adaptador de papelera
-        │   ├── RegistroActivity.java        # Pantalla de registro
+        │   ├── RegistroActivity.java        # Lógica de registro
         │   ├── Tarea.java                   # Modelo de datos
         │   └── TareaAdapter.java            # Adaptador de lista de tareas
         ├── res/
         │   └── layout/
-        │       ├── activity_login.xml
-        │       ├── activity_main.xml
-        │       ├── activity_papelera.xml
-        │       ├── activity_registro.xml
-        │       ├── activity_historial_exportaciones.xml
-        │       ├── item_tarea.xml
-        │       └── item_papelera.xml
+        │       ├── activity_login.xml       # Pantalla de login
+        │       ├── activity_main.xml        # Pantalla principal
+        │       ├── activity_papelera.xml    # Pantalla de papelera
+        │       ├── activity_registro.xml    # Pantalla de registro
+        │       ├── activity_historial_exportaciones.xml  # Pantalla de historial
+        │       ├── item_tarea.xml           # Vista de item de tarea
+        │       └── item_papelera.xml        # Vista de item de papelera
         └── AndroidManifest.xml
 ```
 
@@ -149,8 +148,7 @@ La aplicación requiere los siguientes permisos:
 2. Abre el proyecto en Android Studio
 
 3. Sincroniza el proyecto con Gradle:
-   - `File > Sync Project with Gradle Files`
-
+   
 4. Conecta un dispositivo Android o inicia un emulador
 
 5. Ejecuta la aplicación:
@@ -165,7 +163,7 @@ La aplicación incluye un usuario de prueba:
 Este proyecto es de código abierto y está disponible bajo la Licencia MIT.
 
 ## 👨‍💻 Autor
-**Luis Gzz**
+**Goslo01**
 - GitHub: [@Goslo01](https://github.com/Goslo01)
 
 ---
